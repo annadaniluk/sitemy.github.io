@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сторінка входу</title>
+  <link rel="icon" href="image-61.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="https://www.roblox.com/home" class="nav-item">Головна</a></li>
+        <li><a href="1234 копія.html" class="nav-item">Про нас</a></li>
+        <li><a href="#" class="nav-item">Контакти</a></li>
+      </ul>
+      <button id="create-button" class="nav-button">Створити обліковий запис</button>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <div class="login-box" id="login-box">
+      <i class="fas fa-times close-button" id="close-login-box"></i>
+      <h2>Вхід</h2>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Ім'я користувача">
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Пароль">
+      </div>
+      <button id="login-button">Увійти</button>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <div class="animal-gallery">
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1358(1).jpg" >
+        <p>Cyberpunk 2077</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1357(1).jpg" >
+        <p>Horizon Zero Dawn</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1356(1).jpg" >
+        <p>Marvel's Avengers</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1355(1).jpg" >
+        <p>Project CARS 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1364(1).jpg" >
+        <p>Gears Tactics</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1362(1).jpg" >
+        <p>Starfield </p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1363(1).jpg" >
+        <p>Tom Clancy's Ghost Recon Breakpoint</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.moyo.ua/img/media/images/1920%D1%851080_1360(1).jpg" >
+        <p>ARK: Survival Ascended</p>
+      </div>
+  
+    </div>
+  </div>
+
+
+  <script>
+    const createButton = document.getElementById('create-button');
+    const loginBox = document.getElementById('login-box');
+    const closeButton = document.getElementById('close-login-box');
+
+    createButton.addEventListener('click', () => {
+      loginBox.style.display = 'block'; // Робить блок видимим
+    });
+
+    closeButton.addEventListener('click', () => {
+      loginBox.style.display = 'none'; // Приховує блок
+    });
+  </script>
+
+</body>
+</html>
